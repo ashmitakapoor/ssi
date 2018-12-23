@@ -1,0 +1,6 @@
+com/redhat/ssi/SSIRepository.class
+com/redhat/ssi/SSI.class
+com/redhat/ssi/SSIController.class
+com/redhat/ssi/SSIApplication.class
+com/redhat/ssi/TracingConfiguration.class
+com/redhat/ssi/SwaggerConfiguration.class

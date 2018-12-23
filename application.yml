@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ms-ssi
+#MongoDb details    
+  data:
+    mongodb:
+      username: dbuser
+      password: dbpass
+      host: localhost
+      port: 27017
+      database: ssi  
+# Define the port where the UAA server would be running
+server:
+  port: 8005
+
+# Logging
+logging:
+    pattern:
+      console: "%clr(%d{yyyy-MM-dd HH:mm:ss}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr([${springAppName:-},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}]){yellow} %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"
+    level: 
+      org.springframework: WARN
